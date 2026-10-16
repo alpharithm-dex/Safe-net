@@ -5,10 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#173f42">
   <meta name="description" content="SafeNet turns everyday campus connectivity into an optional route to digital self-defence, peer navigation and accountable support.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SafeNet">
+  <meta property="og:title" content="SafeNet — Safety where students connect">
+  <meta property="og:description" content="An early functional prototype that turns the campus Wi-Fi gateway into an optional route to digital self-defence and accountable support.">
+  <meta property="og:url" content="https://safe-net.pages.dev/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SafeNet — Safety where students connect">
+  <meta name="twitter:description" content="A youth-owned, local-first approach to safer digital participation on campus.">
   <title>SafeNet — Safer digital participation starts where students connect</title>
+  <link rel="canonical" href="https://safe-net.pages.dev/">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -86,7 +96,10 @@
         <p>Connectivity is already campus infrastructure.</p>
         <strong>Safety and support should be within the same reach.</strong>
       </div>
-      <p class="source-note">The study is institution-specific and not a national or women-only prevalence estimate. SafeNet uses it as an initial signal, not a universal claim.</p>
+      <div class="source-block">
+        <p class="source-note">The study is institution-specific and not a national or women-only prevalence estimate. SafeNet uses it as an initial signal, not a universal claim.</p>
+        <a class="source-link" href="https://doi.org/10.20470/jsi.v11i2.387" target="_blank" rel="noopener noreferrer">Read the peer-reviewed study <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
 
     <section class="section split-section" id="how-it-works">
@@ -280,13 +293,40 @@
         <p>SafeNet is being prepared for a bounded adult campus pilot in Zimbabwe. Live intake will not begin before host approval, qualified supervision, verified referrals and privacy review.</p>
       </div>
       <div class="pilot-map reveal">
-        <div class="pilot-step active"><span>Now</span><strong>Functional prototype</strong><small>Gateway, local guidance and support journey demonstration</small></div>
+        <div class="pilot-step active"><span>Now</span><strong>Early functional prototype</strong><small>Public gateway, local guidance and support journey demonstration</small></div>
         <div class="pilot-line"></div>
         <div class="pilot-step"><span>Next</span><strong>Co-design and assurance</strong><small>Paid youth input, accessibility, security and safeguarding review</small></div>
         <div class="pilot-line"></div>
         <div class="pilot-step"><span>Then</span><strong>Bounded campus pilot</strong><small>Adults 18–24, visible capacity and independent incident handling</small></div>
         <div class="pilot-line"></div>
         <div class="pilot-step"><span>Evidence gate</span><strong>Adaptation package</strong><small>Replicate only where local services and safeguards are ready</small></div>
+      </div>
+    </section>
+
+    <section class="section stewardship-section" id="stewardship">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Youth-owned in Zimbabwe</p><h2>Technical delivery and safeguarding share power.</h2></div>
+        <p>SafeNet is built by a gender-balanced two-person founding team. Technical release decisions cannot override an unresolved safeguarding, ethics or privacy concern.</p>
+      </div>
+      <div class="stewardship-grid">
+        <article class="stewardship-card reveal">
+          <span>01</span>
+          <h3>Technical leadership</h3>
+          <p>Owns product architecture, gateway and local-server implementation, configuration testing, release evidence and the technical demonstration.</p>
+        </article>
+        <article class="stewardship-card reveal">
+          <span>02</span>
+          <h3>Safeguarding and community authority</h3>
+          <p>Owns safeguarding coordination, community relevance, ethics and privacy practice, with explicit authority to pause work when a concern remains unresolved.</p>
+        </article>
+        <aside class="evidence-card reveal">
+          <p class="eyebrow">Prototype evidence</p>
+          <strong>Public build · Version-controlled code · 21 automated checks</strong>
+          <div>
+            <a href="https://github.com/alpharithm-dex/Safe-net" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+            <a href="sources.html">Review evidence base <span aria-hidden="true">→</span></a>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -298,14 +338,15 @@
       </div>
       <div class="closing-actions reveal">
         <button class="button button-coral" type="button" data-scroll-demo>Try the gateway</button>
-        <button class="button button-outline-light" type="button" id="pilot-interest">Pilot and partnership information</button>
+        <a class="button button-outline-light" href="https://github.com/alpharithm-dex/Safe-net" target="_blank" rel="noopener noreferrer">View prototype evidence</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <a class="brand footer-brand" href="#top"><img src="icon.svg" alt="">SafeNet</a>
-    <div><a href="#safety">Safety commitments</a><a href="#demo">Prototype demo</a></div>
+    <p>Safety where students connect.</p>
+    <div><a href="#safety">Safety commitments</a><a href="#demo">Prototype demo</a><a href="sources.html">Sources</a><a href="privacy.html">Privacy</a><a href="https://github.com/alpharithm-dex/Safe-net" target="_blank" rel="noopener noreferrer">GitHub</a></div>
   </footer>
 
   <dialog class="modal" id="guide-dialog" aria-labelledby="guide-title">
@@ -365,17 +406,6 @@
     </form>
   </dialog>
 
-  <dialog class="modal" id="pilot-dialog" aria-labelledby="pilot-title">
-    <div class="modal-shell compact-shell">
-      <button class="modal-close" type="button" data-close-dialog aria-label="Close pilot information">×</button>
-      <p class="eyebrow">Pilot and partnership information</p>
-      <h2 id="pilot-title">Safe deployment comes before scale.</h2>
-      <p class="modal-lede">SafeNet is seeking structured conversations with campus hosts, youth organisations and qualified GBV, psychosocial, legal and digital-security providers.</p>
-      <div class="modal-note"><strong>Before public deployment</strong><span>A verified team contact and enquiry channel will be added. No organisation named in the application should be represented as a committed partner without written agreement.</span></div>
-      <button class="button button-primary" type="button" data-close-dialog>Understood</button>
-    </div>
-  </dialog>
-
-  <script src="app.js?v=2" defer></script>
+  <script src="app.js?v=4" defer></script>
 </body>
 </html>

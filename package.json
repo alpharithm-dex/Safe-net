@@ -1,0 +1,9 @@
+{
+  "name": "safenet-prototype",
+  "version": "0.2.0",
+  "private": true,
+  "description": "SafeNet early functional prototype",
+  "scripts": {
+    "test": "node tests/verify.mjs"
+  }
+}

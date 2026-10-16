@@ -85,7 +85,6 @@ tabs.forEach((tab) => {
 
 const guideDialog = $('#guide-dialog');
 const supportDialog = $('#support-dialog');
-const pilotDialog = $('#pilot-dialog');
 
 const openDialog = (dialog) => {
   if (!dialog) return;
@@ -93,7 +92,6 @@ const openDialog = (dialog) => {
 };
 
 $$('[data-guide-target]').forEach((button) => button.addEventListener('click', () => openDialog(guideDialog)));
-$('#pilot-interest')?.addEventListener('click', () => openDialog(pilotDialog));
 
 const closeDialogs = (event) => {
   const dialog = event.currentTarget.closest('dialog');

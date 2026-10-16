@@ -1,8 +1,9 @@
 {
-  "name": "SafeNet Prototype",
+  "name": "SafeNet — Safety where students connect",
   "short_name": "SafeNet",
-  "description": "A youth-governed gateway to digital self-defence and accountable support.",
+  "description": "A youth-owned gateway to digital self-defence and accountable support.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#f5f1e8",
   "theme_color": "#173f42",

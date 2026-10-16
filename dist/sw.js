@@ -1,10 +1,12 @@
-const CACHE_NAME = 'safenet-prototype-v3';
+const CACHE_NAME = 'safenet-prototype-v4';
 const LOCAL_ASSETS = [
   './',
   './index.html',
   './study.html',
-  './styles.css?v=2',
-  './app.js?v=2',
+  './privacy.html',
+  './sources.html',
+  './styles.css?v=4',
+  './app.js?v=4',
   './icon.svg',
   './manifest.webmanifest'
 ];
@@ -25,7 +27,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   if (event.request.mode === 'navigate') {
-    event.respondWith(fetch(event.request).catch(() => caches.match('./index.html')));
+    event.respondWith(fetch(event.request).catch(async () => (await caches.match(event.request)) || caches.match('./index.html')));
     return;
   }
   event.respondWith(

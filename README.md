@@ -1,6 +1,9 @@
 # SafeNet website prototype
 
-A buildless, Cloudflare Pages-ready prototype that presents SafeNet's offering and demonstrates the intended campus gateway, offline guidance, accessibility controls, quick exit and a consent-led support-routing journey.
+A buildless, publicly deployed early functional prototype that presents SafeNet's offering and demonstrates the intended campus gateway, offline guidance, accessibility controls, quick exit and a consent-led support-routing journey.
+
+- Production: https://safe-net.pages.dev/
+- Repository: https://github.com/alpharithm-dex/Safe-net
 
 ## Safety boundary
 
@@ -18,7 +21,15 @@ Then open `http://127.0.0.1:4173`.
 
 Service-worker offline behaviour requires localhost or HTTPS. Visit once while online, then use the browser's offline mode and reload to test the cached experience.
 
-## Deploy to Cloudflare Pages later
+## Test
+
+```powershell
+npm test
+```
+
+The verification suite checks the demo boundary, network-to-gateway flow, quick exit, local-only reference generation, offline assets and internal links.
+
+## Cloudflare Pages deployment
 
 - Framework preset: None
 - Build command: leave blank
@@ -27,10 +38,11 @@ Service-worker offline behaviour requires localhost or HTTPS. Visit once while o
 
 The included `_headers` and `_redirects` files are recognised by Cloudflare Pages.
 
-## Before public deployment
+## Before live support deployment
 
-1. Replace the prototype partnership modal with a verified team contact channel.
-2. Obtain written permission before showing partner names or logos.
-3. Complete safeguarding, legal/privacy, security and accessibility review.
-4. Replace general guidance with locally reviewed content and verified service routes.
-5. Keep live support on a separately administered service; do not add disclosures to the static site or local gateway cache.
+1. Obtain written permission before showing partner names or logos.
+2. Complete safeguarding, legal/privacy, security and accessibility review.
+3. Replace general guidance with locally reviewed content and verified service routes.
+4. Keep live support on a separately administered service; do not add disclosures to the static site or local gateway cache.
+
+See [BRAND.md](BRAND.md) for the public voice and visual system, and [NOTICE.md](NOTICE.md) for ownership terms.
