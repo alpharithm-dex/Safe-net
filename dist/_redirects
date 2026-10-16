@@ -1,2 +1,1 @@
-/privacy /privacy.html 200
-/sources /sources.html 200
+# Cloudflare Pages clean URLs handle .html routes; no custom rewrites required.
