@@ -1,0 +1,17 @@
+{
+  "name": "SafeNet Prototype",
+  "short_name": "SafeNet",
+  "description": "A youth-governed gateway to digital self-defence and accountable support.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f1e8",
+  "theme_color": "#173f42",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
